@@ -1,0 +1,131 @@
+// text
+.ta-r{
+	text-align: right;
+}
+
+.ta-l{
+	text-align: left;
+}
+
+.ta-c{
+	text-align: center;
+}
+
+// margin
+.m0{
+	margin: 0;
+}
+.m0-a {
+	margin: 0 auto;
+}
+.ml-a {
+	margin-left: auto;
+}
+.mr-a {
+	margin-right: auto;
+}
+
+// margins top
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+// margins right
+.mr15{
+	margin-right: 15px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+// margins bottom
+.mb5{
+	margin-bottom: 5px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.mb15{
+	margin-bottom: 15px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.mb30{
+	margin-bottom: 30px;
+}
+.mb40{
+	margin-bottom: 40px;
+}
+
+// margins left
+.ml15{
+	margin-left: 15px;
+}
+.ml20{
+	margin-left: 20px;
+}
+
+// margins y
+.my-5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.my10 {
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+
+
+
+
+// flex style
+
+
+.d-flex{
+	display: flex;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.fl-c-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fl-sb-c {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.jcse, .fl-se-c {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.ai-c{
+	display: flex;
+	align-items: center;
+}
+
+.jc-c{
+	display: flex;
+	justify-content: center;
+}
+
+
+// color
+
+.cl-green{
+	color: $green;
+}
+.cl-white{
+	color: $white;
+}
+
+.cl-grey{
+	color: $grey;
+}

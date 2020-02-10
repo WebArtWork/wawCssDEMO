@@ -1,0 +1,355 @@
+<script src="waw.js"></script>
+<!-- navigation -->
+<nav class="waw-nav">
+	<input type="checkbox" id="check">
+	<label class="waw-nav__logo"><a href="#">DesignX</a></label>
+	<label for="check" class="waw-nav__checkbtn">
+		<i class="fas fa-bars"></i>
+	</label>
+
+	<ul>
+		<li><a class="active" href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Feedback</a></li>
+	</ul>
+</nav>
+
+<!-- web container main -->
+<div class="web-container">
+
+	<div>
+		<div class="web-title">Colors</div>
+		<div class="card color-wrap">
+			<div class="color">
+				<div class="color-prim-1"></div>
+				<div class="color-info">
+					<div class="color-class">$c-primary-1</div>
+					<div class="color-hex">#F44336</div>
+				</div>
+			</div>
+			<div class="color">
+				<div class="color-prim-2"></div>
+				<div class="color-info">
+					<div class="color-class">$c-primary-2</div>
+					<div class="color-hex">#1E88E5</div>
+				</div>
+			</div>
+			<div class="color">
+				<div class="color-prim-3"></div>
+				<div class="color-info">
+					<div class="color-class">$c-primary-3</div>
+					<div class="color-hex">#FDD835</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="web-title">
+			Checkbox & Radio
+		</div>
+		<div class="card">
+			<div class="web-checkbox-item">
+
+
+				<label for="name1" class="waw-radio">One
+					<input id="name1" name="radio" type="radio" checked="checked">
+					<span class="checkmark"></span>
+				</label>
+				<label for="name2" class="waw-radio">One
+					<input id="name2" name="radio" type="radio">
+					<span class="checkmark"></span>
+				</label>
+				<label for="name3" class="waw-checkbox">Three
+					<input id="name3" type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				</label>
+
+				<div class="waw-switch-wrap">
+
+
+					<label class="waw-switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+					</label>
+					<div class="waw-switch-text">
+						text
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<div>
+		<div class="web-title">
+			Form Group
+		</div>
+		<div class="card web-form">
+			<div class="waw-input my-5">
+				<input type="text" required>
+				<span class="bar"></span>
+				<label>Name</label>
+			</div>
+
+
+			<div class="waw-textarea">
+				<textarea class="_mh150" id="message" placeholder="Your Message" rows="6"></textarea>
+				<label for="message" class="waw__label">Your Message</label>
+			</div>
+			<div class="mt20 mb20">
+				<input class="waw-range" type="range" min="0" max="10" step="1" value="0">
+			</div>
+			<div class="waw-inputOld my-5">
+				<input type="text" placeholder="Name" required>
+				<span class="bar"></span>
+
+			</div>
+
+
+
+
+
+
+		</div>
+	</div>
+	<div>
+		<div class="web-title">
+			Buttons
+		</div>
+		<div class="card">
+			<div>
+				<p class="web-title">.waw-btn</p>
+			</div>
+			<div>
+				<button class="mr10 mb10 waw-btn _circle">_circle</button>
+				<button class="mr10 mb10 waw-btn _primary">_primary</button>
+				<button class="mr10 mb10 waw-btn _success">_success</button>
+				<button class="mr10 mb10 waw-btn _danger">_danger</button>
+				<button class="mr10 mb10 waw-btn _warning">_warning</button>
+				<button class="mr10 mb10 waw-btn _info">_info</button>
+				<button class="mr10 mb10 waw-btn _light">_light</button>
+				<button class="mr10 mb10 waw-btn _dark">_dark</button>
+				<button class="mr10 mb10 waw-btn _link">_link</button>
+				<button class="mr10 mb10 waw-btn _disabled">_disabled</button>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="web-title">Select</div>
+		<div class="card">
+			<div class="waw-select">
+				<div class="waw-select__header" [class.arrow]="selectOpen" (click)="selectOpen=!selectOpen"><span *ngIf="!selectCheckerd">Select</span><span *ngIf="selectCheckerd">First</span></div>
+				<div class="waw-select__body" *ngIf="selectOpen">
+					<div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">First</div>
+					<div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Second</div>
+					<div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Third</div>
+					<div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Fourth</div>
+					<div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Fifth</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="web-title">Modal</div>
+		<div class="card"><button class="waw-btn _link" (click)="modalDialogOpen=true">Modal</button></div>
+		<div class="waw-modal" [class.waw-modalOpen]="modalDialogOpen">
+			<div>
+				123
+				<span (click)="modalDialogOpen=false" class="waw-close">X</span>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="web-title">CARDS</div>
+	<div class="waw-card-wrapper">
+
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+		<div class="waw-card">.waw-card</div>
+
+	</div>
+	<div class="web-title mb10">Collapse</div>
+	<div class="waw-collapse">
+		<ul>
+			<li>
+				<input type="checkbox" checked>
+				<i></i>
+				<span>Languages Used</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nam optio consectetur, quidem eveniet repellat beatae saepe quia doloremque, itaque ipsum, rerum aut? Ut voluptate consequuntur porro aspernatur aliquam, molestiae impedit ab
+					sed dolorum, dignissimos molestias magni quod. Debitis rerum libero ipsa dignissimos dolor labore expedita et voluptates doloribus! Iusto quas, dolores consequuntur earum possimus similique eaque laborum, hic eum nulla tempora quis
+					doloremque nemo nam! Suscipit consequuntur, tempora a iure quae, tenetur sapiente eligendi. Nulla quidem sit laudantium, tempore debitis optio! Placeat possimus temporibus eius debitis impedit vitae, aut deleniti ullam tenetur corporis
+					doloremque repudiandae ipsa, fugit facilis praesentium.</p>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="web-title">Alerts</div>
+	<div class="card">
+		<div class="waw-alert _primary">A simple primary alert—check it out!</div>
+		<div class="waw-alert _second">A simple secondary alert—check it out!</div>
+		<div class="waw-alert _success">A simple success alert—check it out!</div>
+		<div class="waw-alert _danger">A simple danger alert—check it out!</div>
+		<div class="waw-alert _warning">A simple warning alert—check it out!</div>
+		<div class="waw-alert _info">A simple info alert—check it out!</div>
+		<div class="waw-alert _dark">A simple dark alert—check it out!</div>
+	</div>
+	<div class="web-title">Badge</div>
+	<div class="card">
+		<div class="waw-badge _primary">_primary</div>
+		<div class="waw-badge _second">_second</div>
+		<div class="waw-badge _success">_success</div>
+		<div class="waw-badge _danger">_danger</div>
+		<div class="waw-badge _warning">_warning</div>
+		<div class="waw-badge _info">_info</div>
+		<div class="waw-badge _dark">_dark</div>
+	</div>
+	<div class="web-title">Popup</div>
+	<div class="card">
+		<button class="waw-btn _link" (click)="popupOn=true">Popup open</button>
+		<div class="waw-popup" *ngIf="popupOn">
+			<span (click)="popupOn=false" class="close">X</span>
+		</div>
+	</div>
+	<div class="web-title">Progress</div>
+	<div class="card">
+		<div class="waw-progress">
+			<div class="waw-progress__bar" style="width: 50%"></div>
+		</div>
+		<div class="waw-progress">
+			<div class="waw-progress__bar _label" style="width: 25%">25%</div>
+		</div>
+
+	</div>
+	<div class="web-title">Spinner</div>
+	<div class="card">
+
+		<svg class="waw-spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+			<circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+		</svg>
+
+	</div>
+
+	<div class="web-title">Tooltips</div>
+	<div class="card">
+		<span class="waw-tooltip _top" aria-label="Sample text for your tooltip!" tabindex="0">
+			<button class="waw-btn">WAW Tooltips</button>
+		</span>
+
+	</div>
+
+
+	<div class="web-title">Met menu</div>
+	<div class="card">
+		<button class="waw-btn _link" (click)="matMenu=true;">Mat menu</button>
+		<div class="waw-mat-menu" *ngIf="matMenu">
+			<div class="waw-mat-menu__body _top">
+				<button class="waw-btn _link" (click)="matMenu=false">Close</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="web-title">Chips</div>
+	<div class="waw-chips-wrapper my10">
+		<div class="waw-chips">One Fish <span class="waw-chips__delete">x</span></div>
+	</div>
+	<div class="web-title">Multiline Lists</div>
+	<div class="card">
+		<div class="waw-list">
+			<div class="waw-list__img"><img src="https://wrappixel.com/demos/angular-admin-templates/material-angular/material/assets/images/users/1.jpg" alt="photo use"></div>
+			<div class="waw-list__text">
+				<h3 class="waw-list__title">Nirav joshi</h3>
+				<div class="waw-list__subtitle">This is the material angular template</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- <div class="card">
+		<h1>Responsive CSS Tabs</h1>
+		<div class="tab_container">
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label for="tab1"><i class="fa fa-code"></i><span>Code</span></label>
+
+			<input id="tab2" type="radio" name="tabs">
+			<label for="tab2"><i class="fa fa-pencil-square-o"></i><span>About</span></label>
+
+			<input id="tab3" type="radio" name="tabs">
+			<label for="tab3"><i class="fa fa-bar-chart-o"></i><span>Services</span></label>
+
+			<input id="tab4" type="radio" name="tabs">
+			<label for="tab4"><i class="fa fa-folder-open-o"></i><span>Portfolio</span></label>
+
+			<input id="tab5" type="radio" name="tabs">
+			<label for="tab5"><i class="fa fa-envelope-o"></i><span>Contact</span></label>
+
+			<section id="content1" class="tab-content">
+				<h3>Headline 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quos.</p>
+			</section>
+
+			<section id="content2" class="tab-content">
+				<h3>Headline 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+			</section>
+
+			<section id="content3" class="tab-content">
+				<h3>Headline 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+			<section id="content4" class="tab-content">
+				<h3>Headline 4</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+			</section>
+
+			<section id="content5" class="tab-content">
+				<h3>Headline 5</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+		</div> -->
+
+
+	<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<router-outlet></router-outlet>
