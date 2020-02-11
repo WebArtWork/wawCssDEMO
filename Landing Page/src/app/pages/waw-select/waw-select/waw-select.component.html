@@ -1,0 +1,14 @@
+<div class="web-title">Select</div>
+<div class="card">
+  <div class="waw-select">
+    <div class="waw-select__header" [class.arrow]="selectOpen" (click)="selectOpen=!selectOpen"><span *ngIf="!selectCheckerd">Select</span><span *ngIf="selectCheckerd">First</span></div>
+    <div class="waw-select__body" *ngIf="selectOpen">
+      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">First</div>
+      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Second</div>
+      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Third</div>
+      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Fourth</div>
+      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Fifth</div>
+
+    </div>
+  </div>
+</div>

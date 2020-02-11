@@ -1,0 +1,42 @@
+.waw-list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  &__img {
+    img {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    padding-left: 16px;
+  }
+
+  &__title {
+    color: rgba(0,0,0,.87);
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    color: #99abb4;
+  }
+
+  &__subtitle,
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    box-sizing: border-box;
+  }
+}

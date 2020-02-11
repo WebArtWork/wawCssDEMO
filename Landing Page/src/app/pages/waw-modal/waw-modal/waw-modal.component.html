@@ -1,0 +1,10 @@
+<div class="web-title">Modal</div>
+<div class="card">
+  <button class="waw-btn _link" (click)="modalDialogOpen=true">Modal</button>
+</div>
+<div class="waw-modal" [class.waw-modalOpen]="modalDialogOpen">
+  <div>
+    123
+    <span (click)="modalDialogOpen=false" class="waw-close">X</span>
+  </div>
+</div>

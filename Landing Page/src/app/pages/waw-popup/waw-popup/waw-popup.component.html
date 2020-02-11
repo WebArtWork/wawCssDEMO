@@ -1,0 +1,7 @@
+<div class="web-title">Popup</div>
+<div class="card">
+  <button class="waw-btn _link" (click)="popupOn=true">Popup open</button>
+  <div class="waw-popup" *ngIf="popupOn">
+    <span (click)="popupOn=false" class="close">X</span>
+  </div>
+</div>
