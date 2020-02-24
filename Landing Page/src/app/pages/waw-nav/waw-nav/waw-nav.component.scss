@@ -1,0 +1,33 @@
+.leftMenu {
+  width: 200px;
+  box-shadow: -3px 3px 12px 0 #c7c7c7;
+  position: absolute;
+  background: white;
+  height: calc(100ch - 80px);
+  z-index: 12;
+  transform: translateX(-100%);
+  transition: 0.3s all ease-in-out;
+  overflow-y: auto;
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      text-align: center;
+      a {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.leftMenu__input {
+  display: none;
+}
+.leftMenu__input:checked + .leftMenu__active {
+  transform: translateX(0);
+  transition: 0.3s all ease-in-out;
+}
