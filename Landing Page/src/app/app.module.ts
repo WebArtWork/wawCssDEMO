@@ -28,6 +28,7 @@ import { WawSpinnerComponent } from './pages/waw-spinner/waw-spinner/waw-spinner
 import { WawSwitchComponent } from './pages/waw-switch/waw-switch/waw-switch.component';
 import { WawTextareaComponent } from './pages/waw-textarea/waw-textarea/waw-textarea.component';
 import { WawTooltipComponent } from './pages/waw-tooltip/waw-tooltip/waw-tooltip.component';
+import { LandComponent } from './pages/land/land/land.component';
 
 
 
@@ -61,7 +62,8 @@ const routes: Routes = [];
     WawSpinnerComponent,
     WawSwitchComponent,
     WawTextareaComponent,
-    WawTooltipComponent
+    WawTooltipComponent,
+    LandComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
