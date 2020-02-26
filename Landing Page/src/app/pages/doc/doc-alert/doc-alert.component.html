@@ -1,0 +1,75 @@
+<div class="code">
+  <div class="code-first">
+
+
+    <div class="code-buttons">
+      <button (click)="html=true;css=false" class="waw-btn">HTML</button>
+      <button (click)="css=true;html=false" class="waw-btn">CSS</button>
+    </div>
+    <h4 *ngIf="html">HTML</h4>
+    <h4 *ngIf="css">CSS</h4>
+    <textarea *ngIf="html" name="" id="" cols="30" rows="10" spellcheck="false">
+      <div class="waw-alert _primary">A simple primary alert—check it out!</div>
+      <div class="waw-alert _second">A simple secondary alert—check it out!</div>
+      <div class="waw-alert _success">A simple success alert—check it out!</div>
+      <div class="waw-alert _danger">A simple danger alert—check it out!</div>
+      <div class="waw-alert _warning">A simple warning alert—check it out!</div>
+      <div class="waw-alert _info">A simple info alert—check it out!</div>
+      <div class="waw-alert _dark">A simple dark alert—check it out!</div>
+    </textarea>
+    <textarea *ngIf="css" name="" id="" cols="30" rows="10" spellcheck="false">
+      .waw-alert {
+        position: relative;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+
+        &._primary {
+          color: #004085;
+          background-color: #cce5ff;
+          border-color: #b8daff;
+        }
+
+        &._second {
+          color: #383d41;
+          background-color: #e2e3e5;
+          border-color: #d6d8db;
+        }
+
+        &._success {
+          color: #155724;
+          background-color: #d4edda;
+          border-color: #c3e6cb;
+        }
+
+        &._danger {
+          color: #721c24;
+          background-color: #f8d7da;
+          border-color: #f5c6cb;
+        }
+
+        &._warning {
+          color: #856404;
+          background-color: #fff3cd;
+          border-color: #ffeeba;
+        }
+
+        &._info {
+          color: #0c5460;
+          background-color: #d1ecf1;
+          border-color: #bee5eb;
+        }
+
+        &._dark {
+          color: #1b1e21;
+          background-color: #d6d8d9;
+          border-color: #c6c8ca;
+        }
+      }
+    </textarea>
+  </div>
+  <div class="code-second">
+    123
+  </div>
+</div>

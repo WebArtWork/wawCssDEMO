@@ -1,0 +1,36 @@
+.code {
+  height: calc(100vh - 80px);
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  &-first, &-second {
+    flex: 50%;
+  }
+  h4 {
+    margin: 10px;
+  }
+
+  textarea {
+    padding: 10px;
+    margin: 10px;
+    max-width: 600px;
+    width: 100%;
+    font-size: 14px;
+    color: #ff4081;
+    overflow-x: auto;
+    font-family: Dosis, sans-serif;
+    border: 3px solid #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    resize: none;
+    border-radius: 10px;
+  }
+
+  .code-buttons {
+    button {
+      margin: 10px;
+    }
+    border-bottom: 1px solid #666;
+  }
+}

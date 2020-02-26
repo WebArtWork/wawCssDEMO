@@ -29,6 +29,10 @@ import { WawSwitchComponent } from './pages/waw-switch/waw-switch/waw-switch.com
 import { WawTextareaComponent } from './pages/waw-textarea/waw-textarea/waw-textarea.component';
 import { WawTooltipComponent } from './pages/waw-tooltip/waw-tooltip/waw-tooltip.component';
 import { LandComponent } from './pages/land/land/land.component';
+import { DocComponent } from './pages/doc/doc/doc.component';
+import { DocAlertComponent } from './pages/doc/doc-alert/doc-alert.component';
+
+
 
 
 
@@ -63,7 +67,9 @@ const routes: Routes = [];
     WawSwitchComponent,
     WawTextareaComponent,
     WawTooltipComponent,
-    LandComponent
+    LandComponent,
+    DocComponent,
+    DocAlertComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

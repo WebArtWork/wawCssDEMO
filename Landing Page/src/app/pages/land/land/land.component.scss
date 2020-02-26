@@ -1,0 +1,53 @@
+.land {
+  background: #29292b;
+  color: white;
+  height: calc(100vh - 80px);
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-img {
+    width: 250px;
+  }
+
+  &-btn {
+    margin-top: 20px;
+
+    & > button:first-child {
+      margin-right: 50px;
+    }
+
+    button {
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    span {
+      color: #007bff;;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  .version {
+    color: #666;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+  }
+}

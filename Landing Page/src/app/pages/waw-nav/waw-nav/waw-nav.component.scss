@@ -11,9 +11,11 @@
 
   ul {
     padding: 0;
+
     li {
       list-style: none;
       text-align: center;
+
       a {
         width: 100%;
         display: block;
@@ -27,7 +29,30 @@
 .leftMenu__input {
   display: none;
 }
+
 .leftMenu__input:checked + .leftMenu__active {
   transform: translateX(0);
   transition: 0.3s all ease-in-out;
+}
+
+.burger-icon {
+  position:absolute;
+  span {
+    display: block;
+
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+  }
+}
+
+.web-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  label {
+    z-index: 11111;
+  }
 }
