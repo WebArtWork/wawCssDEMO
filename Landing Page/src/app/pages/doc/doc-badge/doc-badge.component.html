@@ -1,0 +1,84 @@
+<div class="code">
+  <div class="code-first mx10 my10 card">
+
+
+    <div class="waw-badge _primary">_primary</div>
+    <div class="waw-badge _second">_second</div>
+    <div class="waw-badge _success">_success</div>
+    <div class="waw-badge _danger">_danger</div>
+    <div class="waw-badge _warning">_warning</div>
+    <div class="waw-badge _info">_info</div>
+    <div class="waw-badge _dark">_dark</div>
+  </div>
+
+
+
+
+  <div class="code-second c">
+    <div class="code-buttons">
+      <button (click)="html=true;css=false" class="waw-btn _light">HTML</button>
+      <button (click)="css=true;html=false" class="waw-btn _light">CSS</button>
+    </div>
+    <h4 *ngIf="html">HTML</h4>
+    <h4 *ngIf="css">CSS</h4>
+    <textarea *ngIf="html" name="" id="" cols="30" rows="10" spellcheck="false">
+      <div class="waw-badge _primary">_primary</div>
+      <div class="waw-badge _second">_second</div>
+      <div class="waw-badge _success">_success</div>
+      <div class="waw-badge _danger">_danger</div>
+      <div class="waw-badge _warning">_warning</div>
+      <div class="waw-badge _info">_info</div>
+      <div class="waw-badge _dark">_dark</div>
+    </textarea>
+    <textarea *ngIf="css" name="" id="" cols="30" rows="10" spellcheck="false">
+      .waw-badge {
+        display: inline-block;
+        padding: 0.25em 0.4em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 10rem;
+        transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+        margin-right: 10px;
+
+        &._primary {
+          color: #fff;
+          background-color: #007bff;
+        }
+
+        &._second {
+          color: #fff;
+          background-color: #6c757d;
+        }
+
+        &._success {
+          color: #fff;
+          background-color: #28a745;
+        }
+
+        &._danger {
+          color: #fff;
+          background-color: #dc3545;
+        }
+
+        &._warning {
+          color: #212529;
+          background-color: #ffc107;
+        }
+
+        &._info {
+          color: #fff;
+          background-color: #17a2b8;
+        }
+
+        &._dark {
+          color: #fff;
+          background-color: #343a40;
+        }
+      }
+    </textarea>
+  </div>
+</div>

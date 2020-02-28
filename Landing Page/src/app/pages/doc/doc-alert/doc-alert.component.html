@@ -1,21 +1,34 @@
 <div class="code">
-  <div class="code-first">
+  <div class="code-first mx10 my10 card">
 
 
+    <div class="waw-alert _primary">A simple primary alert—check it out!</div>
+    <div class="waw-alert _second">A simple secondary alert—check it out!</div>
+    <div class="waw-alert _success">A simple success alert—check it out!</div>
+    <div class="waw-alert _danger">A simple danger alert—check it out!</div>
+    <div class="waw-alert _warning">A simple warning alert—check it out!</div>
+    <div class="waw-alert _info">A simple info alert—check it out!</div>
+    <div class="waw-alert _dark">A simple dark alert—check it out!</div>
+  </div>
+
+
+
+
+  <div class="code-second c">
     <div class="code-buttons">
-      <button (click)="html=true;css=false" class="waw-btn">HTML</button>
-      <button (click)="css=true;html=false" class="waw-btn">CSS</button>
+      <button (click)="html=true;css=false" class="waw-btn _light">HTML</button>
+      <button (click)="css=true;html=false" class="waw-btn _light">CSS</button>
     </div>
     <h4 *ngIf="html">HTML</h4>
     <h4 *ngIf="css">CSS</h4>
     <textarea *ngIf="html" name="" id="" cols="30" rows="10" spellcheck="false">
-      <div class="waw-alert _primary">A simple primary alert—check it out!</div>
-      <div class="waw-alert _second">A simple secondary alert—check it out!</div>
-      <div class="waw-alert _success">A simple success alert—check it out!</div>
-      <div class="waw-alert _danger">A simple danger alert—check it out!</div>
-      <div class="waw-alert _warning">A simple warning alert—check it out!</div>
-      <div class="waw-alert _info">A simple info alert—check it out!</div>
-      <div class="waw-alert _dark">A simple dark alert—check it out!</div>
+  <div class="waw-alert _primary">Text</div>
+  <div class="waw-alert _second">Text</div>
+  <div class="waw-alert _success">Text</div>
+  <div class="waw-alert _danger">Text</div>
+  <div class="waw-alert _warning">Text</div>
+  <div class="waw-alert _info">Text</div>
+  <div class="waw-alert _dark">Text</div>
     </textarea>
     <textarea *ngIf="css" name="" id="" cols="30" rows="10" spellcheck="false">
       .waw-alert {
@@ -68,8 +81,5 @@
         }
       }
     </textarea>
-  </div>
-  <div class="code-second">
-    123
   </div>
 </div>

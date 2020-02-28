@@ -14,5 +14,30 @@
   &__delete {
     margin-left: 10px;
     cursor: pointer;
+    position: relative;
+    width: 12px;
+    height: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 2px;
+      background-color: #fff;
+      display: block;
+      transform: rotate(45deg);
+      top: 5px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 2px;
+      background-color: #fff;
+      display: block;
+      transform: rotate(-45deg);
+      top: 5px;
+    }
   }
 }

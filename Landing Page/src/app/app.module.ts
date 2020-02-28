@@ -31,6 +31,7 @@ import { WawTooltipComponent } from './pages/waw-tooltip/waw-tooltip/waw-tooltip
 import { LandComponent } from './pages/land/land/land.component';
 import { DocComponent } from './pages/doc/doc/doc.component';
 import { DocAlertComponent } from './pages/doc/doc-alert/doc-alert.component';
+import { DocBadgeComponent } from './pages/doc/doc-badge/doc-badge.component';
 
 
 
@@ -69,7 +70,8 @@ const routes: Routes = [];
     WawTooltipComponent,
     LandComponent,
     DocComponent,
-    DocAlertComponent
+    DocAlertComponent,
+    DocBadgeComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
