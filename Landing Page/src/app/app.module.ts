@@ -32,6 +32,7 @@ import { LandComponent } from './pages/land/land/land.component';
 import { DocComponent } from './pages/doc/doc/doc.component';
 import { DocAlertComponent } from './pages/doc/doc-alert/doc-alert.component';
 import { DocBadgeComponent } from './pages/doc/doc-badge/doc-badge.component';
+import { WawSliderComponent } from './pages/waw-slider/waw-slider/waw-slider.component';
 
 
 
@@ -71,7 +72,8 @@ const routes: Routes = [];
     LandComponent,
     DocComponent,
     DocAlertComponent,
-    DocBadgeComponent
+    DocBadgeComponent,
+    WawSliderComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
