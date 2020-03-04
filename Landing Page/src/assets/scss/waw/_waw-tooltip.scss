@@ -58,7 +58,7 @@
     content: attr(aria-label); //This pulls in the text from the element with the tooltip
     padding: 0.5rem;
     text-transform: none;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     width: 200px;
   }
   //Tooltip arrow
@@ -91,6 +91,6 @@
   &:hover::after,
   &:hover::before {
     opacity: 1;
-    transition: all 0.75s ease;
+    transition: all 0.5s ease-in-out;
   }
 }

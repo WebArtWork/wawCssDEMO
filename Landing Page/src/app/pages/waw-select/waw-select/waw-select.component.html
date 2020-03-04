@@ -1,13 +1,19 @@
 <div class="web-title">Select</div>
 <div class="card">
   <div class="waw-select">
-    <div class="waw-select__header" [class.arrow]="selectOpen" (click)="selectOpen=!selectOpen"><span *ngIf="!selectCheckerd">Select</span><span *ngIf="selectCheckerd">First</span></div>
-    <div class="waw-select__body" *ngIf="selectOpen">
-      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">First</div>
-      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Second</div>
-      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Third</div>
-      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Fourth</div>
-      <div class="waw-select--item" (click)="selectOpen=false;selectCheckerd=true;">Fifth</div>
+    <input class="selectSwitch" type="checkbox" name="sdfsdf" id="123">
+    <div class="waw-select__header">
+
+      <label for="123">Select</label>
+      <!-- <label for=""></label> -->
+    </div>
+
+    <div class="waw-select__body">
+      <div class="waw-select--item">First</div>
+      <div class="waw-select--item">Second</div>
+      <div class="waw-select--item">Third</div>
+      <div class="waw-select--item">Fourth</div>
+      <div class="waw-select--item">Fifth</div>
 
     </div>
   </div>
