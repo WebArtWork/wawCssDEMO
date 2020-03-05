@@ -1,9 +1,10 @@
 // INPUT
 .waw-input {
   position: relative;
+  // input body settings
   input {
     font-size: 14px;
-    padding: 10px 10px 10px 5px;
+    padding: 10px 10px 3px 5px;
     display: block;
     width: 100%;
     border: none;
@@ -12,13 +13,14 @@
       outline: none;
     }
   }
+  // input placeholder settings
   label {
     color: $c-primary-2;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 5px;
+    left: 0px;
     top: 10px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
@@ -26,10 +28,11 @@
   }
   input:focus ~ label,
   input:valid ~ label {
-    top: -10px;
+    top: -5px;
     font-size: 12px;
     color: $c-primary-2;
   }
+  // line bar settings
   .bar {
     position: relative;
     display: block;

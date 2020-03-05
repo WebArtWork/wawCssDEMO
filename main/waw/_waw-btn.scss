@@ -1,6 +1,7 @@
 
 // BUTTONS
 .waw-btn {
+  // buttons body settings
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -20,11 +21,14 @@
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
   box-shadow 0.15s ease-in-out;
-  // border-radius settings
+
+  // buttons border-radius settings
   &._circle {
     border-radius: 30px;
     padding: 8px 15px;
   }
+
+  // buttons color settings
   &._primary {
     background-color: #007bff;
     transition: 0.2s ease-in-out;
