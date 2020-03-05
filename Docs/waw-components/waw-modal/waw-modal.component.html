@@ -1,0 +1,8 @@
+<a class="waw-btn _link" (click)="modalDialogOpen=true">Modal</a>
+
+<div class="waw-modal" [class.waw-modalOpen]="modalDialogOpen">
+  <div>
+    Content
+    <span (click)="modalDialogOpen=false" class="waw-close"></span>
+  </div>
+</div>
