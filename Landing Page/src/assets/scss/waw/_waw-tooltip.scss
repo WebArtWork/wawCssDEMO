@@ -74,6 +74,7 @@
     line-height: 0;
     margin-left: -5px;
     width: 0;
+    transition: all .5s ease-in-out;
   }
   //Setting up the transition
   &::after,

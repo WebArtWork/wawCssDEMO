@@ -9,6 +9,7 @@
 
 // waw card
 .waw-card {
+  // card body settings
   width: 250px;
   height: 250px;
   background: #fff;
@@ -17,13 +18,14 @@
   padding: 35px;
   transition: 0.5s all ease-in-out;
   cursor: pointer;
+
   // hover move up
   &:hover {
     margin-top: 0;
     transition: 0.5s all ease-in-out;
   }
-  // col settings
-  // with - margin px (waw-card)
+
+  // col settings [with - margin px (waw-card)]
   flex-basis: calc(33% - 20px);
   @include bp-max (md) {
     flex-basis: calc(50% - 20px);

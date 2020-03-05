@@ -1,4 +1,5 @@
 .waw-chips {
+  // chips body settings
   padding: 7px 8px 7px 12px;
   background-color: #1e88e5;
   color: #fff;
@@ -10,14 +11,16 @@
   cursor: default;
   min-height: 32px;
   height: 1px;
-
+  
+  // chips delete 
   &__delete {
     margin-left: 10px;
     cursor: pointer;
     position: relative;
     width: 12px;
     height: 12px;
-
+    
+    // icon delete
     &::before {
       content: "";
       position: absolute;
