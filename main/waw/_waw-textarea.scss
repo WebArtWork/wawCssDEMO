@@ -1,110 +1,58 @@
-// TEXTAREA
-.waw-textarea {
-  position: relative;
-  textarea {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 41px;
-    height: 40px;
-    font-family: inherit;
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid $c-primary-2;
-    outline: 0;
-    font-size: 14px;
-    color: $c-text;
-    margin: 16px 0px 0px 0px;
-    padding-top: 10px;
-    background: transparent;
-    transition: border-color 0.2s;
-    &._mh150 {
-      max-height: 150px;
+// textarea
+.waw-textarea{
+    position: relative;
+
+    span {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $blue;
+        margin-bottom: 10px;
+        display: inline-block;
+		font-weight: bold;
     }
-  }
 
-  textarea::placeholder {
-    color: transparent;
-  }
+    // input body settings
+    textarea {
+        font-size: 14px;
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        border: 1px solid $grey;
+        border-radius: 15px;
+        color: $blue;
+        letter-spacing: 0.2px;
+        font-size: 16px;
+        background-color: $white;
+        transition: .3s all ease-in-out;
+		min-height: 80px;
+		resize: vertical;
+		max-height: 150px;
 
-  textarea:placeholder-shown ~ .waw__label {
-    font-size: 16px;
-    cursor: text;
-    top: 20px;
-  }
+        &::placeholder {
+            color: $grey;
+			transition: .1s all ease-in-out;
+        }
 
-  label,
-  textarea:focus ~ .waw__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 12px;
-    color: $c-primary-2;
-  }
+        &:focus {
+            transition: .1s all ease-in-out;
+            border-color: $sky;
+            color: $sky;
+        }
 
-  textarea:focus ~ .waw__label {
-    color: $c-primary-2;
-  }
-
-  textarea:focus {
-    padding-bottom: 6px;
-    border-bottom: 2px solid $c-primary-2;
-  }
-}
-
-// TEXTAREA
-.waw-textareaOld {
-  position: relative;
-  textarea {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 41px;
-    height: 40px;
-    font-family: inherit;
-    outline: 0;
-    background: transparent;
-    transition: border-color 0.2s;
-    font-size: 14px;
-    color: $c-text;
-    margin: 16px 0px 0px 0px;
-    padding-top: 10px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: 1px solid #CDD9ED;
-    border-radius: 8px;
-    transition: 0.2s ease-in-out;
-    &._mh150 {
-      max-height: 150px;
     }
-  }
 
-  textarea::placeholder {
-    color: transparent;
-  }
+    &._disabled {
+        textarea {
+            border-color: $grey;
+            color: $grey;
+            cursor: not-allowed;
+        }
 
-  textarea:placeholder-shown ~ .waw__label {
-    font-size: 16px;
-    cursor: text;
-    top: 20px;
-  }
+        span {
+            color: $grey;
+        }
+    }
 
-  label,
-  textarea:focus ~ .waw__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 12px;
-    color: $c-primary-2;
-  }
-
-  textarea:focus ~ .waw__label {
-    color: $c-primary-2;
-  }
-
-  textarea:focus {
-    padding-bottom: 6px;
-    border-bottom: 2px solid $c-primary-2;
-  }
 }
